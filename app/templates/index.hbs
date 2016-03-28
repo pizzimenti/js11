@@ -4,10 +4,9 @@ We hope you find a good place to stay.
 
 <ul>
   {{#each model as |rental|}}
-    <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+    {{rental-tile rental=rental}}
   {{/each}}
 </ul>
-
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
